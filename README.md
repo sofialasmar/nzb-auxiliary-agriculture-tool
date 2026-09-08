@@ -3,7 +3,7 @@ Auxiliary tool for estimating agricultural areas and associated emissions at the
 
 ## Inputs
 - `report.rds`: MAgPIE-Brazil scenario outputs
-- `AAT_shares_byState.csv`: state allocation shares for agricultural systems 【1-dd2480】
+- `AAT_shares_byState.csv`: state allocation shares for agricultural systems
 
 ## Outputs
 - `AAT_areas_byState.csv`
