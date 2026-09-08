@@ -1,15 +1,17 @@
 ##########################################
-######Auxiliary Agriculture Tool##########
+######AFOLU Agriculture Tool##########
 ##########################################
 
 library(tidyverse)
 
-# Paths    #AJUSTAR PARA AS PATHS DA MÁQUINA
-base_path <- "C:/Repositorios" #"C:/Users/barbara.zimbres/magpie_nzb"
-report_path <- file.path(base_path, "magpie-bra-scenario-viewer/output/NZB_Scenario12/report.rds")
-shares_path <- file.path(base_path, "Auxiliary Agriculture Tool/AAT_shares_byState.csv")
-output_path_areas <- file.path(base_path, "Auxiliary Agriculture Tool/Plataforma/Scenario12/AAT_areas_byState.csv")
-output_path_emissions <- file.path(base_path, "Auxiliary Agriculture Tool/Plataforma/Scenario12/AAT_emissions_byState.csv")
+# Paths
+# Inputs
+report_path <- "report.rds"
+shares_path <- "AAT_shares_byState.csv"
+
+# Outputs
+output_path_areas <- "AAT_areas_byState.csv"
+output_path_emissions <- "AAT_emissions_byState.csv"
 
 # Read data
 df <- readRDS(report_path)
